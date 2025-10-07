@@ -47,5 +47,9 @@ submit.onclick = function(){
     else if(cf.checked){
         cfFormula(Value);
     }
+    else{
+        answer.textContent = "Select a unit";
+    }
+
 
 }
