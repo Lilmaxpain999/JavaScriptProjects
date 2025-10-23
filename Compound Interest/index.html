@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUTORIAL LOL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="middle-line"></div>
+    <div class="container">
+        <div class="calculation-box1">
+            <h1>Compound Interest</h1>
+
+            <label for="principal-amount">Principal Amount: </label>
+            <input id="principal-amount" type="number">
+            <label for="monthly-contribution">Monthly Contribution: </label>
+            <input id="monthly-contribution" type="number">
+            <label for="time">Time In Years: </label>
+            <input id="time" type="number">
+            <label for="rate">Rate of Annual Return: </label>
+            <input id="rate" type="number">
+
+            <label for="compound-frequency">Compound Frequency: </label>
+            <select name="frequency" id="compound-frequency">
+                <option value="">-- Select Frequency --</option>
+                <option value="Annual">Annual</option>
+                <option value="Semi-Annual">Semi-Annual</option>
+                <option value="Quaterly">Quaterly</option>
+                <option value="Monthly">Monthly</option>
+            </select>
+
+            <div class="buttons">
+                <button id="reset">Reset</button>
+                <button id="calculate">Calculate</button>
+            </div>
+        </div>
+        <div class="calculation-box2">
+            <h1>Results</h1>
+            <div class="compounded-amount">
+                <p>Compound Amount</p>
+                <p id="compoundedAmount"></p>
+            </div>
+            <div class="profit-made">
+                <p>Profit Made</p>
+                <p id="profitMade"></p>
+            </div>
+            <div class="percentage-gain">
+                <p>Percentage Gain</p>
+                <p id="percentageGain"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
